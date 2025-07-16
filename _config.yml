@@ -1,115 +1,187 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+repository: AstraBert/my-resume
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
+name: Clelia Astra Bertelli
+title: Open Source Engineer @ LlamaIndex
+email: astraberte9@gmail.com
 # email_title: Email (Email title override)
-phone: Your phone number (optional)
+phone: 
 # phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
+website: https://clelia.dev
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
+twitter_username: itsclelia
+github_username:  AstraBert
+linkedin_username: clelia-astra-bertelli-583904297
+orcid_username: 0009-0002-3595-0498
 
 # Additional icon links
 additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+- title: All my social media
+  icon: fab fa-link
+  url: https://link.clelia.dev
+- title: My Blog
+  icon: fab fa-pen-to-square
+  url: https://clelia.dev/blog/
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+about_profile_image: images/me.jpeg
+about_content: | 
+  I'm Clelia, a software engineer with a passion for open source, AI and python.
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  I am goal-driven, ambitious, and always on the look for the next challenge.
+
+  Building is my passion: I love creating useful automation in my day-to-day life, as well as I dive more than happily into weekend projects!
+
+  I also love writing, tackling both technical and scientific topics for the sake of open science (I had my BSc. in Biology!)
 
 content:
-  - title: Projects # Title for the section
+  - title: Top 5 Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        title: NotebookLlaMa
+        link: https://github.com/run-llama/notebookllama
+        link_text: GitHub Repository
         quote: >
-          Short overview of the project (optional)
+          An OSS, LlamaCloud-backed clone of NotebookLM
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          NotebookLlaMa brings intelligent automation to your everyday document processing workflows
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: NotebookLlaMa
+        link: https://github.com/run-llama/notebookllama
+        link_text: GitHub Repository
+        quote: >
+          An OSS, LlamaCloud-backed clone of NotebookLM
+        description: | # this will include new lines to allow paragraphs
+          NotebookLlaMa brings intelligent automation to your everyday document processing workflows
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: NotebookLlaMa
+        link: https://github.com/run-llama/notebookllama
+        link_text: GitHub Repository
+        quote: >
+          An OSS, LlamaCloud-backed clone of NotebookLM
+        description: | # this will include new lines to allow paragraphs
+          NotebookLlaMa brings intelligent automation to your everyday document processing workflows
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: PdfItDown
+        link: https://github.com/AstraBert/PdfItDown
+        link_text: GitHub Repository
+        quote: >
+          Convert (almost) any file to PDF!
+        description: | # this will include new lines to allow paragraphs
+          PdfItDown is a python package and CLI tool to convert most file formats into PDF for GenAI application!
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: ingest-anything
+        link: https://github.com/AstraBert/ingest-anything
+        link_text: GitHub Repository
+        quote: >
+          Connect your data sources to a vector database, one-click.
+        description: | # this will include new lines to allow paragraphs
+          ingest-anything is a python package that automates the building of RAG pipelines by performing all the steps between you and having your files into a vector database!
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: LlamaResearcher
+        link: https://github.com/AstraBert/llama-4-researcher
+        link_text: GitHub Repository
+        quote: >
+          Deep-research the web with the power of Llama-4
+        description: | # this will include new lines to allow paragraphs
+          LlamaResearcher researches the depth of the web and produces essays on a given topic. Powered by LlamaIndex, Groq, Gradio and LinkUp.
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: coding-cli
+        link: https://cli.clelia.dev
+        link_text: Website
+        quote: >
+          CLI assistant for coding tasks
+        description: | # this will include new lines to allow paragraphs
+          coding-cli is a Typescript package that allows you to understand, modify and debug you code with the assistance of AI.
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
+        title: LlamaIndex
+        sub_title: Open Source Engineer
+        caption: May 2025 - present
+        link: https://llamaindex.ai
         quote: >
-          Short description of the company (optional)
+          Automating document workflows with AI
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          I am one of the maintainers of LlamaIndex OSS framework, both for Python and Typescript. I also contribute to other LlamaIndex-managed packages and build projects related to our open-source and cloud products.
+      - layout: right
+        title: LegalForLandlords
+        sub_title: AI Engineer
+        caption: February 2025 - May 2025
+        link: https://lfl.co.uk
+        quote: >
+          Automating legal documents understanding with AI
+        description: | # this will include new lines to allow paragraphs
+          I contributed to build a pipeline for processing legal documents using AI agents orchestration.
+      - layout: right
+        title: Natural History Museum Vienna
+        sub_title: Bioinformatics Researcher
+        caption: October 2024 - March 2025
+        link: https://www.nhm.at
+        quote: >
+          Insect genomics and biostatistics.
+        description: | # this will include new lines to allow paragraphs
+          In my six-months fellowship, I researched human-driven impact on the genetic differentiation of fruit flies in Europe using quantitative genome data.
+      - layout: right
+        title: Criad Ltd
+        sub_title: Founding Engineer
+        caption: June 2024 - February 2025
+        link: 
+        quote: >
+          Building the next space for designers and architects, using AI
+        description: | # this will include new lines to allow paragraphs
+          I was involved in the first phases of development and iteration over a product that would represent a new, AI-powered space for A&D.
+
+    
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        title: University of Pavia
+        sub_title: BSc. Biological Sciences
+        caption: 2022-2025
         quote: >
-          Short institution or course description (optional)
+          Biological Sciences program with a focus on Genetics and Bioinformatics
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          As a Biology undergraduate student, I followed courses about Genetics, Physiology, Evolution, Ecology and (Bio)chemistry. My focus has been, throughout my Bachelor's degree, mostly on Bioinformatics.
+          My dissertation was titled: "Exploring Potential Commensality Patterns between Drosophila melanogaster and Homo sapiens in Europe" and was supervised by doct. Lino Ometto (University of Pavia) and doct. Martin Kapun (NHM Vienna).
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+      My skills, beyond being a python developer, AI (from RAG to agents), encompass DevOps (especially with Docker), git and GitHub, TypeScript, Astro... and I would really love to keep learning Go and start learning Rust. 
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      I am a passionate person: I try to do my best whenever I can. I value solo work, but I discovered that I value work more when it is a team effort, and many people contribute to iterate and build something wonderful!
+
+      Beyond my technical skills, indeed, I spent a lot of time focusing on building good soft skills, such as speaking in public and pitching ideas or story-telling them through reports or presentations, as well as cultivating transparent communication.
+
+      My interests, beyond programming, are travel, art (and museums!), my cat and sports (although I generally prefer the gym).
 
 # Footer
 footer_show_references: true
