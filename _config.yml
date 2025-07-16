@@ -27,10 +27,10 @@ orcid_username: 0009-0002-3595-0498
 # Additional icon links
 additional_links:
 - title: All my social media
-  icon: fab fa-link
+  icon: fas fa-link
   url: https://link.clelia.dev
 - title: My Blog
-  icon: fab fa-pen-to-square
+  icon: far fa-pen
   url: https://clelia.dev/blog/
 
 # About Section
@@ -46,11 +46,11 @@ about_content: |
   I also love writing, tackling both technical and scientific topics for the sake of open science (I had my BSc. in Biology!)
 
 content:
-  - title: Top 5 Projects # Title for the section
+  - title: My Top 5 Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: NotebookLlaMa
         link: https://github.com/run-llama/notebookllama
@@ -60,27 +60,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           NotebookLlaMa brings intelligent automation to your everyday document processing workflows
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: NotebookLlaMa
-        link: https://github.com/run-llama/notebookllama
-        link_text: GitHub Repository
-        quote: >
-          An OSS, LlamaCloud-backed clone of NotebookLM
-        description: | # this will include new lines to allow paragraphs
-          NotebookLlaMa brings intelligent automation to your everyday document processing workflows
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: NotebookLlaMa
-        link: https://github.com/run-llama/notebookllama
-        link_text: GitHub Repository
-        quote: >
-          An OSS, LlamaCloud-backed clone of NotebookLM
-        description: | # this will include new lines to allow paragraphs
-          NotebookLlaMa brings intelligent automation to your everyday document processing workflows
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: PdfItDown
         link: https://github.com/AstraBert/PdfItDown
@@ -90,7 +70,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           PdfItDown is a python package and CLI tool to convert most file formats into PDF for GenAI application!
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: ingest-anything
         link: https://github.com/AstraBert/ingest-anything
@@ -100,7 +80,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           ingest-anything is a python package that automates the building of RAG pipelines by performing all the steps between you and having your files into a vector database!
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: LlamaResearcher
         link: https://github.com/AstraBert/llama-4-researcher
@@ -110,7 +90,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           LlamaResearcher researches the depth of the web and produces essays on a given topic. Powered by LlamaIndex, Groq, Gradio and LinkUp.
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: coding-cli
         link: https://cli.clelia.dev
@@ -122,7 +102,7 @@ content:
   - title: Experience
     layout: list
     content:
-      - layout: right
+      - layout: left
         title: LlamaIndex
         sub_title: Open Source Engineer
         caption: May 2025 - present
@@ -131,7 +111,7 @@ content:
           Automating document workflows with AI
         description: | # this will include new lines to allow paragraphs
           I am one of the maintainers of LlamaIndex OSS framework, both for Python and Typescript. I also contribute to other LlamaIndex-managed packages and build projects related to our open-source and cloud products.
-      - layout: right
+      - layout: left
         title: LegalForLandlords
         sub_title: AI Engineer
         caption: February 2025 - May 2025
@@ -140,7 +120,7 @@ content:
           Automating legal documents understanding with AI
         description: | # this will include new lines to allow paragraphs
           I contributed to build a pipeline for processing legal documents using AI agents orchestration.
-      - layout: right
+      - layout: left
         title: Natural History Museum Vienna
         sub_title: Bioinformatics Researcher
         caption: October 2024 - March 2025
@@ -149,7 +129,7 @@ content:
           Insect genomics and biostatistics.
         description: | # this will include new lines to allow paragraphs
           In my six-months fellowship, I researched human-driven impact on the genetic differentiation of fruit flies in Europe using quantitative genome data.
-      - layout: right
+      - layout: left
         title: Criad Ltd
         sub_title: Founding Engineer
         caption: June 2024 - February 2025
@@ -163,7 +143,7 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-right
+      - layout: top-left
         title: University of Pavia
         sub_title: BSc. Biological Sciences
         caption: 2022-2025
