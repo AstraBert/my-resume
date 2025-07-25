@@ -151,7 +151,7 @@ content:
           Biological Sciences program with a focus on Genetics and Bioinformatics
         description: | # this will include new lines to allow paragraphs
           As a Biology undergraduate student, I followed courses about Genetics, Physiology, Evolution, Ecology and (Bio)chemistry. My focus has been, throughout my Bachelor's degree, mostly on Bioinformatics.
-          My dissertation was titled: "Exploring Potential Commensality Patterns between Drosophila melanogaster and Homo sapiens in Europe" and was supervised by doct. Lino Ometto (University of Pavia) and doct. Martin Kapun (NHM Vienna).
+          My dissertation was titled: ["Exploring Potential Commensality Patterns between Drosophila melanogaster and Homo sapiens in Europe"](https://docs.google.com/presentation/d/11WHJccFQ-YBKR5tBoHDoDOZ3eiPvGDacoaLCyT6wW5I/edit?usp=sharing) and was supervised by doct. Lino Ometto (University of Pavia) and doct. Martin Kapun (NHM Vienna).
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
