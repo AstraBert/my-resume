@@ -72,33 +72,33 @@ content:
       - layout: left
         border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: ingest-anything
-        link: https://github.com/AstraBert/ingest-anything
+        title: workflows-acp
+        link: https://github.com/AstraBert/workflows-acp
         link_text: GitHub Repository
         quote: >
-          Connect your data sources to a vector database, one-click.
+          Generalist Agent built on LlamaIndex Workflows and Agent Client Protocol.
         description: | # this will include new lines to allow paragraphs
-          ingest-anything is a python package that automates the building of RAG pipelines by performing all the steps between you and having your files into a vector database!
+          workflows-acp is a python package and CLI application that can connect to any ACP client and perform complex tasks with built-in support for MCPs, filesystem and bash tools, memory, TODO tracking and sandboxing via AgentFS. It supports all major models by Anthropic, OpenAI and Google
       - layout: left
         border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: LlamaResearcher
-        link: https://github.com/AstraBert/llama-4-researcher
+        title: agentfs-claude
+        link: https://github.com/run-llama/agentfs-claude
         link_text: GitHub Repository
         quote: >
-          Deep-research the web with the power of Llama-4
+          Run Claude Code/Codex within AgentFS, orchestrated by LlamaIndex Workflows
         description: | # this will include new lines to allow paragraphs
-          LlamaResearcher researches the depth of the web and produces essays on a given topic. Powered by LlamaIndex, Groq, Gradio and LinkUp.
+          agentfs-claude is a CLI tool that allows you to run Claude Code and Codex on a virtual filesystem (AgentFS) instead of your real one, preventing damages deriving from deletions or modifications.
       - layout: left
         border:  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: coding-cli
-        link: https://cli.clelia.dev
+        title: what-a-git-year
+        link: https://gityear.re
         link_text: Website
         quote: >
-          CLI assistant for coding tasks
+          Spotify Wrapper for GitHub.
         description: | # this will include new lines to allow paragraphs
-          coding-cli is a Typescript package that allows you to understand, modify and debug you code with the assistance of AI.
+          A full-stack application built with Go, allowing users and organizations to get statistics about their profile on GitHub. It features several system design concepts such as authentication/authorization, rate limiting, CORS, caching and monitoring.
   - title: Experience
     layout: list
     content:
