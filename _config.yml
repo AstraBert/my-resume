@@ -164,7 +164,7 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      My skills, beyond being a python developer, AI (from RAG to agents), encompass DevOps (especially with Docker), git and GitHub, TypeScript, Astro... and I would really love to keep learning Go and start learning Rust.
+      My skills, beyond being a python developer, AI (agentic workflows, coding agents, developer tooling, MCP...), encompass DevOps (especially with Docker), git and GitHub, Go and Rust... I am trying my best to build many diversified projects in my free time to upskill as much as I can.
 
       I am a passionate person: I try to do my best whenever I can. I value solo work, but I discovered that I value work more when it is a team effort, and many people contribute to iterate and build something wonderful!
 
