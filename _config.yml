@@ -1,184 +1,302 @@
 # Site
 repository: AstraBert/my-resume
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
-
-# Content configuration version
 version: 2
 
 # Personal info
 name: Clelia Astra Bertelli
-title: Open Source Engineer @ LlamaIndex
+title: Member of Technical Staff @ LlamaIndex • AI Infrastructure • OSS • Technical Education
 email: astraberte9@gmail.com
-# email_title: Email (Email title override)
-phone:
-# phone_title: Phone (Phone title override)
 website: https://clelia.dev
-# website_title: Web (Website title override)
 
-# Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
 twitter_username: itsclelia
 github_username: AstraBert
 linkedin_username: clelia-astra-bertelli-583904297
-orcid_username: 0009-0002-3595-0498
 
-# Additional icon links
 additional_links:
   - title: All my social media
     icon: fas fa-link
     url: https://link.clelia.dev
-  - title: My Blog
+
+  - title: Blog
     icon: far fa-pen
-    url: https://clelia.dev/blog/
+    url: https://clelia.dev/blog
 
-# About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: images/me.jpeg
+about_profile_image: images/me.jpg
+
 about_content: |
-  I'm Clelia, a software engineer with a passion for open source and AI, coding in languages like Python, Go, Rust and Typescript/Javascript.
+  I'm Clelia, an Open Source Engineer at LlamaIndex working on AI systems, agentic workflows and developer tooling.
 
-  I am goal-driven, ambitious, and always on the look for the next challenge.
+  My work sits at the intersection of engineering, open source and technical education: I build OSS projects, maintain widely used AI tooling, and I write and speak publicly about emerging workflows, coding agents, observability, document intelligence and MCPs.
 
-  Building is my passion: I love creating useful automation in my day-to-day life, as well as I dive more than happily into weekend projects!
-
-  I also love writing, tackling both technical and scientific topics for the sake of open science (I had my BSc. in Biology!)
+  I’ve contributed to projects reaching thousands of developers, maintained components of the LlamaIndex ecosystem, written for companies including Google, Render, Auth0, LanceDB and Qdrant, and created open-source tools adopted by the community.
 
 content:
-  - title: My Top Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  #################################################
+  # COMMUNITY / WRITING
+  #################################################
+
+  - title: Writing, Talks & Community
+    layout: list
     content:
       - layout: left
-        border: # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
+        title: Technical Writing
+        quote: >
+          Articles on coding agents, document workflows and AI infrastructure.
+        description: |
+          Author of technical articles for LlamaIndex and independently on:
+
+          - [Coding agent sandboxing](https://www.llamaindex.ai/blog/making-coding-agents-safe-using-llamaindex)
+          - [Skills vs MCP tools](https://www.llamaindex.ai/blog/skills-vs-mcp-tools-for-agents-when-to-use-what)
+          - Observability for AI systems ([[1]](https://www.llamaindex.ai/blog/observability-in-agentic-document-workflows), [[2]](https://clelia.dev/2026-05-14-instrumenting-coding-agents))
+          - AI agents and the tooling around them ([[1]](https://clelia.dev/2026-02-09-the-anatomy-of-a-document-processing-agent), [[2]](https://www.llamaindex.ai/blog/llamaparse-mcp-the-tooling-layer-for-your-document-agents))
+          - Filesystems, search and RAG ([[1]](https://www.llamaindex.ai/blog/did-filesystem-tools-kill-vector-search), [[2]](https://clelia.dev/2025-09-11-use-your-documents-the-right-way-in-rag), )
+
+      - layout: left
+        title: Public Speaking
+        quote: >
+          Talks and YouTube videos around AI and agents.
+        description: |
+          A selection of contributions:
+          - [Vector search & workflow engineering](https://youtu.be/CDyFukgpayY?si=gbYNHwL0UCxSLpsn) - Qdrant Vector Space Day (Berlin, Sept. 2025)
+          - [Anatomy of AI agents](https://youtu.be/4_JGRGX2zxo?si=c-DqHkew0BH8phkK) - Voxel51 Meetup (Stuttgart, April 2026)
+          - [LiteParse: Local Document Parsing for AI Agents](https://youtu.be/_gcqMGUWN-E?si=R2iLIJ06N1dpktOB)
+          - [Build Agents from your Files (with LlamaAgents Builder)](https://youtu.be/5Nk6KZhBDbQ?si=UbkLJsZlq8KYyCbo)
+
+      - layout: left
+        title: Community
+        quote: >
+          Building in public.
+        description: |
+          ~5000 LinkedIn followers
+
+          800+ X followers
+
+          ~500 GitHub followers
+
+          2.2K+ GitHub stars across projects
+
+          Active through blogs, YouTube tutorials, OSS demos and technical talks.
+
+  #################################################
+  # PROJECTS
+  #################################################
+
+  - title: Selected Projects & Open Source
+    layout: list
+    content:
+      - layout: left
+        title: aggit
+        link: https://github.com/AstraBert/aggit
+        link_text: Repository
+        quote: >
+          Local and S3-backed git-like object storage for AI agents artifacts. Rust-based.
+        description: |
+          Aggit is git designed for your AI agents.
+
+          Add atomic changes, commit them, back them up to a remote S3 server, without never
+          polluting your branch history, and push to GitHub only when you're satisfied with
+          the result.
+
+      - layout: left
         title: PdfItDown
         link: https://github.com/AstraBert/PdfItDown
-        link_text: GitHub Repository
+        link_text: Repository
         quote: >
-          Convert (almost) any file to PDF!
-        description: | # this will include new lines to allow paragraphs
-          PdfItDown is a python package and CLI tool to convert most file formats into PDF for GenAI application!
+          Convert almost any file to PDF • 20K+ downloads
+        description: |
+          Python package and CLI for converting heterogeneous formats into PDF workflows for GenAI applications.
+
+          Adopted by developers building document pipelines.
+
       - layout: left
-        border: # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
+        title: sunbears
+        link: https://github.com/AstraBert/sunbears
+        link_text: Repository
+        quote: >
+          Rust-based CSV parsing library for TypeScript, inspired by Polars and Pandas.
+        description: |
+          Sunbears is a native Typescript library, cross-compiled from Rust.
+
+          Able to read a 1.000.000 lines CSV in 0.3s in Node, SunBears is designed to bear
+          the weight of data-intensive workloads for TypeScript backends.
+
+      - layout: left
         title: workflows-acp
         link: https://github.com/AstraBert/workflows-acp
-        link_text: GitHub Repository
+        link_text: Repository
         quote: >
-          Generalist Agent built on LlamaIndex Workflows and Agent Client Protocol.
-        description: | # this will include new lines to allow paragraphs
-          workflows-acp is a python package and CLI application that can connect to any ACP client and perform complex tasks with built-in support for MCPs, filesystem and bash tools, memory, TODO tracking and sandboxing via AgentFS. It supports all major models by Anthropic, OpenAI and Google
+          Generalist AI agent supporting ACP, MCP and sandboxed execution
+        description: |
+          Agent framework with support for filesystem tools, memory, TODO tracking, AgentFS and multiple model providers.
+
       - layout: left
-        border: # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
-        title: jake
-        link: https://jake-build.com
-        link_text: Website
-        quote: >
-          A Rust-based Make alternative for Unix operating systems.
-        description: | # this will include new lines to allow paragraphs
-          jake is a task executor written in Rust, with simplicity and feature-richness at the core: TOML-based task definition, dependency resolution, support for loading env vars, dry-runs, listing tasks, initializing boilerplate files, executing scripts from package.json...
-      - layout: left
-        border: # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
-        title: squite
-        link: https://squite.de
-        link_text: Website
-        quote: >
-          A UI for SQLite, written in Rust.
-        description: | # this will include new lines to allow paragraphs
-          SqUIte is a Desktop app that serves as a UI for SQLite, built with egui and rusqulite.
-      - layout: left
-        border: # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
         title: agentfs-claude
         link: https://github.com/run-llama/agentfs-claude
-        link_text: GitHub Repository
+        link_text: Repository
         quote: >
-          Run Claude Code/Codex within AgentFS, orchestrated by LlamaIndex Workflows
-        description: | # this will include new lines to allow paragraphs
-          agentfs-claude is a CLI tool that allows you to run Claude Code and Codex on a virtual filesystem (AgentFS) instead of your real one, preventing damages deriving from deletions or modifications.
+          Safer coding agents through filesystem sandboxing
+        description: |
+          Run Claude Code/Codex inside AgentFS rather than real filesystems to reduce destructive operations.
+
       - layout: left
-        border: # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
-        title: what-a-git-year
+        title: What-a-git-year
         link: https://gityear.re
         link_text: Website
         quote: >
-          Spotify Wrapped for GitHub.
-        description: | # this will include new lines to allow paragraphs
-          A full-stack application built with Go, allowing users and organizations to get statistics about their profile on GitHub. It features several system design concepts such as authentication/authorization, rate limiting, CORS, caching and monitoring.
+          Spotify Wrapped for GitHub
+        description: |
+          Full-stack Go application with authentication, caching, monitoring and analytics.
+
+  #################################################
+  # EXPERIENCE
+  #################################################
+
   - title: Experience
     layout: list
     content:
       - layout: left
         title: LlamaIndex
-        sub_title: Open Source Engineer
-        caption: May 2025 - present
+        sub_title: Member of Technical Staff
+        caption: May 2025 – present
         link: https://llamaindex.ai
+
         quote: >
-          Automating document workflows with AI
-        description: | # this will include new lines to allow paragraphs
-          I am one of the maintainers of LlamaIndex OSS framework, both for Python and Typescript. I also contribute to other LlamaIndex-managed projects, such as [Semtools](https://github.com/run-llama/semtools) (Rust-based CLI for local document intelligence), and build projects and demos related to our open-source and cloud products.
+          Building AI infrastructure and agentic developer tooling
+
+        description: |
+          - Working on LlamaAgents and LlamaParse Platform (agent capabilities, knowledge base/agentic retrieval capabilities)
+          - Maintaining open source projects such as LiteParse and Semtools
+          - Producing demo for LlamaParse Platform products, also in partnership with other companies such as Google, Render, Qdrant, LanceDB, Auth0
+          - Producing tech content such as blogs and videos, and engaging with the community at conferences and meetups
+
       - layout: left
         title: LegalForLandlords
         sub_title: AI Engineer
-        caption: February 2025 - May 2025
-        link: https://lfl.co.uk
+        caption: Feb 2025 – May 2025
+
         quote: >
-          Automating legal documents understanding with AI
-        description: | # this will include new lines to allow paragraphs
-          I contributed to build a pipeline for processing legal documents using AI agents orchestration.
+          Legal document understanding with AI
+
+        description: |
+          Contributed to pipelines processing legal documents through AI agent orchestration.
+
       - layout: left
         title: Natural History Museum Vienna
         sub_title: Bioinformatics Researcher
-        caption: October 2024 - March 2025
-        link: https://www.nhm.at
+        caption: Oct 2024 – Mar 2025
+
         quote: >
-          Insect genomics and biostatistics.
-        description: | # this will include new lines to allow paragraphs
-          In my six-months fellowship, I researched human-driven impact on the genetic differentiation of fruit flies in Europe using quantitative genome data.
+          Genomics & quantitative biology
+
+        description: |
+          Researched human-driven impacts on Drosophila population genetics using genome data.
+
       - layout: left
         title: Criad Ltd
         sub_title: Founding Engineer
-        caption: June 2024 - February 2025
-        link:
+        caption: Jun 2024 – Feb 2025
+
         quote: >
-          Building the next space for designers and architects, using AI
-        description: | # this will include new lines to allow paragraphs
-          I was involved in the first phases of development and iteration over a product that would represent a new, AI-powered space for A&D.
+          AI for architecture & design workflows
+
+        description: |
+          Early engineering work around AI-powered products for architects and designers.
+
+  #################################################
+  # PUBLICATIONS
+  #################################################
+
+  - title: Collaborations
+    layout: list
+    content:
+      - layout: left
+        title: Google Developers Blog
+        sub_title: Technical Article
+        link: https://developers.googleblog.com/build-a-smart-financial-assistant-with-llamaparse-and-gemini-31/
+        quote: >
+          Build a Smart Financial Assistant with LlamaParse and Gemini 3.1
+        description: |
+          Co-authored technical article on the Google Developers Blog demonstrating how to combine LlamaParse with Gemini 3.1 to build AI-powered document workflows.
+
+      - layout: left
+        title: Render
+        sub_title: Technical Article
+        link: https://render.com/blog/building-document-pipelines-that-actually-scale
+        quote: >
+          Building Document Pipelines That Actually Scale
+        description: |
+          Contributed a deep-dive on architecting scalable document ingestion pipelines using LlamaParse, covering deployment patterns and performance considerations on Render's infrastructure.
+
+      - layout: left
+        title: Auth0
+        sub_title: Technical Article
+        link: https://auth0.com/blog/securing-ai-documents-llamaindex-auth0/
+        quote: >
+          Securing AI Document Pipelines with LlamaIndex and Auth0
+        description: |
+          Partnered with Auth0 to write a guide on adding authentication and authorization to AI-powered document workflows, integrating the LlamaParse Platform services with Auth0's identity platform.
+
+      - layout: left
+        title: LanceDB
+        sub_title: Technical Article
+        link: https://www.lancedb.com/blog/smart-parsing-meets-sharp-retrieval-combining-liteparse-and-lancedb
+        quote: >
+          Smart Parsing Meets Sharp Retrieval — Combining LiteParse and LanceDB
+        description: |
+          Collaborated with the LanceDB team to demonstrate how LiteParse and LanceDB complement each other for efficient multimodal document parsing and vector retrieval at scale.
+
+      - layout: left
+        title: Qdrant
+        sub_title: Technical Article
+        link: https://qdrant.tech/blog/hitchhikers-guide/
+        quote: >
+          The Hitchhiker's Guide to Document AI with LlamaParse and Qdrant
+        description: |
+          Partnered with Qdrant to publish a practical guide on building end-to-end retrieval AI systems.
+
+  #################################################
+  # EDUCATION
+  #################################################
 
   - title: Education
     layout: list
     content:
       - layout: top-left
         title: University of Pavia
-        sub_title: BSc. Biological Sciences
-        caption: 2022-2025
+        sub_title: BSc Biological Sciences
+        caption: 2022–2025
+
         quote: >
-          Biological Sciences program with a focus on Genetics and Bioinformatics
-        description: | # this will include new lines to allow paragraphs
-          As a Biology undergraduate student, I followed courses about Genetics, Physiology, Evolution, Ecology and (Bio)chemistry. My focus has been, throughout my Bachelor's degree, mostly on Bioinformatics.
-          My dissertation was titled: ["Exploring Potential Commensality Patterns between Drosophila melanogaster and Homo sapiens in Europe"](https://docs.google.com/presentation/d/11WHJccFQ-YBKR5tBoHDoDOZ3eiPvGDacoaLCyT6wW5I/edit?usp=sharing) and was supervised by doct. Lino Ometto (University of Pavia) and doct. Martin Kapun (NHM Vienna).
+          Genetics • Bioinformatics • Evolution
+
+        description: |
+          Biology degree focused on genetics and computational biology.
+
+          Dissertation:
+
+          "Exploring Potential Commensality Patterns between Drosophila melanogaster and Homo sapiens in Europe"
+
+          Supervised by University of Pavia and Natural History Museum Vienna researchers.
+
+  #################################################
+  # EXTRA
+  #################################################
+
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      My skills, beyond being a python developer, AI (agentic workflows, coding agents, developer tooling, MCP...), encompass DevOps (especially with Docker), git and GitHub, Go and Rust... I am trying my best to build many diversified projects in my free time to upskill as much as I can.
+    content: |
+      Beyond engineering, I care deeply about communication.
 
-      I am a passionate person: I try to do my best whenever I can. I value solo work, but I discovered that I value work more when it is a team effort, and many people contribute to iterate and build something wonderful!
+      I enjoy explaining difficult ideas, writing technical content, speaking publicly and helping developers adopt new workflows.
 
-      Beyond my technical skills, indeed, I spent a lot of time focusing on building good soft skills, such as speaking in public and pitching ideas or story-telling them through reports or presentations, as well as cultivating transparent communication.
+      My interests increasingly revolve around developer tooling and how AI changes software engineering practice.
 
-      My interests, beyond programming, are travel, art (and museums!), my cat and sports (although I generally prefer the gym).
+      Outside tech: travel, museums, biology, sports and my cat.
 
-# Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass
@@ -192,11 +310,7 @@ exclude:
     "Gemfile",
     "Gemfile.lock",
     "node_modules",
-    "vendor/bundle/",
-    "vendor/cache/",
-    "vendor/gems/",
-    "vendor/ruby/",
-    "lib/",
+    "vendor/",
     "scripts/",
     "docker-compose.yml",
   ]
